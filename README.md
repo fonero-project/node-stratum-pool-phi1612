@@ -1,6 +1,3 @@
-
-#### PHI1612 node stratum pool implemented by 216k155
-
 High performance Stratum poolserver in Node.js. One instance of this software can startup and manage multiple coin
 pools, each with their own daemon and stratum port :)
 
@@ -41,7 +38,6 @@ Features
 * When started with a coin deamon that hasn't finished syncing to the network it shows the blockchain download progress and initializes once synced
 
 #### Hashing algorithms supported:
-* ✓ __PHI1612__ (BHCoin)
 * ✓ __SHA256__ (Bitcoin, Freicoin, Peercoin/PPCoin, Terracoin, etc..)
 * ✓ __Scrypt__ (Litecoin, Dogecoin, Feathercoin, etc..)
 * ✓ __Scrypt-Jane__ (YaCoin, CopperBars, Pennies, Tickets, etc..)
@@ -54,13 +50,22 @@ Features
 * ✓ __Skein__ (Skeincoin [SKC])
 * ✓ __Groestl__ (Groestlcoin [GRS])
 
+May be working (needs additional testing):
+* ? *Blake* (Blakecoin [BLC])
+* ? *Fugue* (Fuguecoin [FC])
+* ? *Qubit* (Qubitcoin [Q2C], Myriadcoin [MYR])
+* ? *SHAvite-3* (INKcoin [INK])
+* ? *Sha1* (Sha1coin [SHA], Yaycoin [YAY])
 
-
+Not working currently:
+* *Groestl* - for Myriadcoin
+* *Keccak* - for eCoin & Copperlark
+* *Hefty1* (Heavycoin [HVC])
 
 
 Requirements
 ------------
-* node v0.12+
+* node v0.10+
 * coin daemon (preferably one with a relatively updated API and not some crapcoin :p)
 
 
